@@ -2,11 +2,16 @@
 
 
 > 又一个没用的网站。
+<br>
+2024年，要实现什么目标？    
+<br><br>
 
-2024年，要实现什么目标？
+- 吃饭
+  - 学习
+    - 睡觉
 
-![一张图片](/images/base-octocat.svg)
 
 
-
-本网站使用 [GitHub](https://pages.github.com/)创建。
+<br><br>
+ 
+<small>&copy; 2024 <a>DTer</a></small>
