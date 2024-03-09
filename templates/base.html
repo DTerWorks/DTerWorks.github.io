@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ user.name }}的学习计划</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+      type="text/css"
+    />
+    {% endblock %}
+  </head>
+  <body>
+    <h2>
+      <img
+        alt="Avatar"
+        class="avatar"
+        src="{{ url_for('static', filename='images/avatar.png') }}"
+      />
+      {{ user.name }}的学习计划
+    </h2>
+
+    <form method="post">
+      <!-- 指定提交方法为 POST -->
+      <label for="name">名字</label>
+      <input type="text" name="name" id="name" /><br />
+      <!-- 文本输入框 -->
+      <label for="occupation">职业</label>
+      <input type="text" name="occupation" id="occupation" /><br />
+      <!-- 文本输入框 -->
+      <input type="submit" name="submit" value="登录" />
+      <!-- 提交按钮 -->
+    </form>
+
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">主页</a></li>
+      </ul>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer>
+      <small>&copy; 2018 <a href="http://helloflask.com/book/3">DTer</a></small>
+    </footer>
+  </body>
+</html>
